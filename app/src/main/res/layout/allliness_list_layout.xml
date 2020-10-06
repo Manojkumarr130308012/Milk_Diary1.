@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/grey_3"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/lineNametxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textColor="#9C27B0"
+            android:textSize="22dp"
+            android:text="Line Name"/>
+
+        <TextView
+            android:id="@+id/salesmantxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:text="Salesman"/>
+
+        <TextView
+            android:id="@+id/mobiletxt"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#3F51B5"
+            android:drawableLeft="@drawable/telephone"
+            android:drawablePadding="5dp"
+            android:layout_gravity="center"
+            android:textSize="17dp"
+            android:text="Price"/>
+        <TextView
+            android:id="@+id/vehictxt"
+            android:layout_marginTop="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/car"
+            android:drawablePadding="5dp"
+            android:textColor="#FF5722"
+            android:textStyle="italic"
+            android:textSize="12dp"
+            android:text="Date"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="10dp">
+
+
+        <ImageView
+            android:id="@+id/editBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/edit1"
+            android:padding="10dp"
+            android:background="@drawable/edit_btn"
+            />
+   
+    </LinearLayout>
+
+</LinearLayout>

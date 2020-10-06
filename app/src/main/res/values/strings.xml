@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Milk Diary</string>
+
+    <string name="empid">com.rajuuu.milkdiary.empid</string>
+    <string name="name">com.rajuuu.milkdiary.name</string>
+    <string name="mobb">com.rajuuu.milkdiary.mobb</string>
+    <string name="usrname">com.rajuuu.milkdiary.usrnamee</string>
+    <string name="adhar">com.rajuuu.milkdiary.adhar</string>
+    <string name="addr">com.rajuuu.milkdiary.addr</string>
+    <string name="logusr">com.rajuuu.milkdiary.logusr</string>
+    <string name="desid">com.rajuuu.milkdiary.desid</string>
+    <string name="usrid">com.rajuuu.milkdiary.usrid</string>
+
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="nav_homefragment">Home</string>
+
+    <string name="register">REGISTER</string>
+    <string name="login_email_hint">User Name</string>
+    <string name="login_password_hint">Password</string>
+    <string name="signup_login_hint">Already have an account? Sign In</string>
+    <string name="login_signup_hint">Don\'t have an account? Sign Up</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="create_pdf">Create PDF</string>
+    <string name="msg_progress_pdf">XML layout is in created PDF file. Please wait few moment.\nTotal PDF page :%s</string>
+    <string name="msg_progress_merger_pdf">All pdf file merge into one file. Please wait few moment. After done of mergig pdf file, go to pdf file path.</string>
+    <string name="error_file">Can\'t read pdf file</string>
+    <string name="send_to">Send mail...</string>
+</resources>

@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    style="@style/loginParent"
+    android:background="#92CCE4"
+    tools:context=".Activity.AddProductActivity">
+    <LinearLayout
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Order Details"
+            android:textColor="#FFFFFF"
+            android:gravity="center"/>
+        <LinearLayout
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:id = "@+id/relativeLayout1"
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5"  >
+
+            <TextView
+                android:id="@+id/date"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "3"
+                android:gravity = "center"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:background = "@drawable/cell_shape"
+                android:padding = "5dp"
+                android:text = "1"
+                android:textColor = "#FF5722" />
+
+            <TextView
+                android:id="@+id/line"
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "3"
+                android:textSize="17dp"
+                android:background = "@drawable/cell_shape"
+                android:gravity = "center"
+                android:textStyle="bold"
+                android:padding = "5dp"
+                android:text = "Line"
+                android:textColor = "#9C27B0"/>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape2"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text = "Opening Balance"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id = "@+id/obal"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#3F51B5"
+                android:background = "@drawable/cell_shape3"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "4"
+                android:singleLine = "true" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#A38D8D" >
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "1.5"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:padding = "5dp"
+                android:text = "Product"
+                android:singleLine = "true" />
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "TL"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "ML"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "SL"
+                android:gravity="center"
+                android:singleLine = "true" />
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Rate"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Amount"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#F8F8F8"  >
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "5"
+                android:gravity = "center"
+                android:textSize="18dp"
+                android:background = "@drawable/cell_shape"
+                android:padding = "5dp"
+                android:text = "Morning"
+                android:textStyle="bold"
+                android:textColor = "#110B0A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:id="@+id/mBn"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "1.5"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:gravity="center"
+                android:textColor="#9C27B0"
+                android:padding = "5dp"
+                android:text = "Product"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mBnTl"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:textColor="#9C27B0"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "TL"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mBnMl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "ML"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mBnSl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "SL"
+                android:gravity="center"
+                android:singleLine = "true" />
+            <TextView
+                android:id="@+id/mBnRate"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Rate"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mBnAmo"
+                android:textColor="#25A52B"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Amount"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:id="@+id/mCn"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "1.5"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:gravity="center"
+                android:textColor="#9C27B0"
+                android:padding = "5dp"
+                android:text = "Product"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mCnTl"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:textColor="#9C27B0"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "TL"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mCnMl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "ML"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mCnSl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "SL"
+                android:gravity="center"
+                android:singleLine = "true" />
+            <TextView
+                android:id="@+id/mCnRate"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Rate"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mCnAmo"
+                android:textColor="#25A52B"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Amount"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#F8F8F8"  >
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "wrap_content"
+                android:layout_weight = "5"
+                android:gravity = "center"
+                android:textSize="18dp"
+                android:background = "@drawable/cell_shape"
+                android:padding = "5dp"
+                android:text = "Evening"
+                android:textStyle="bold"
+                android:textColor = "#110B0A" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:id="@+id/eBn"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "1.5"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:gravity="center"
+                android:textColor="#9C27B0"
+                android:padding = "5dp"
+                android:text = "Product"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eBnTl"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:textColor="#9C27B0"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "TL"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eBnMl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "ML"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eBnSl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "SL"
+                android:gravity="center"
+                android:singleLine = "true" />
+            <TextView
+                android:id="@+id/eBnRate"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Rate"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eBnAmo"
+                android:textColor="#25A52B"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Amount"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:id="@+id/eCn"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "1.5"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:gravity="center"
+                android:textColor="#9C27B0"
+                android:padding = "5dp"
+                android:text = "Product"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eCnTl"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:textColor="#9C27B0"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "TL"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eCnMl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "ML"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eCnSl"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "SL"
+                android:gravity="center"
+                android:singleLine = "true" />
+            <TextView
+                android:id="@+id/eCnRate"
+                android:textColor="#9C27B0"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Rate"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/eCnAmo"
+                android:textColor="#25A52B"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3"
+                android:background = "@drawable/cell_shape"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "Amount"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:textColor="#FEFCFF"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "10"
+                android:background = "@drawable/cell_shape2"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text = "Total Amount"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/amtTot"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3.1"
+                android:background = "@drawable/cell_shape3"
+                android:ellipsize = "end"
+                android:textSize="15dp"
+                android:textColor="#25A52B"
+                android:textStyle="bold"
+                android:padding = "5dp"
+                android:text = "Total"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:textColor="#FEFCFF"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "10"
+                android:background = "@drawable/cell_shape2"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text = "Morning Receipt"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/mrngReci"
+                android:textColor="#E41708"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3.1"
+                android:background = "@drawable/cell_shape3"
+                android:ellipsize = "end"
+                android:textSize="16dp"
+                android:padding = "5dp"
+                android:text = "Receipt"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:textColor="#FEFCFF"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "10"
+                android:background = "@drawable/cell_shape2"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text = "Evening Receipt"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/evngReci"
+                android:textColor="#E41708"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3.1"
+                android:background = "@drawable/cell_shape3"
+                android:ellipsize = "end"
+                android:textSize="16dp"
+                android:padding = "5dp"
+                android:text = "Receipt"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:textColor="#FEFCFF"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "10"
+                android:background = "@drawable/cell_shape2"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:textStyle="bold"
+                android:textSize="17dp"
+                android:text = "Total Receipt"
+                android:gravity="center"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id="@+id/reciTot"
+                android:textColor="#E41708"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "3.1"
+                android:background = "@drawable/cell_shape3"
+                android:ellipsize = "end"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:padding = "5dp"
+                android:text = "Total"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width = "fill_parent"
+            android:layout_height = "wrap_content"
+            android:background = "#FFF5F5" >
+
+            <TextView
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "2"
+                android:background = "@drawable/cell_shape2"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="17dp"
+                android:textStyle="bold"
+                android:text = "Closing Balance"
+                android:singleLine = "true" />
+
+            <TextView
+                android:id = "@+id/cbal"
+                android:layout_width = "0dp"
+                android:layout_height = "match_parent"
+                android:layout_weight = "1"
+                android:gravity="center"
+                android:textSize="18dp"
+                android:textColor="#25A52B"
+                android:textStyle="bold"
+                android:background = "@drawable/cell_shape3"
+                android:ellipsize = "end"
+                android:padding = "5dp"
+                android:text = "4"
+                android:singleLine = "true" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/editBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/edit1"
+            android:visibility="invisible"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:background="@drawable/edit_btn"
+            />
+
+        <Button
+            style="@style/loginButton"
+            android:layout_marginTop="15dp"
+            android:layout_gravity="center"
+            android:drawablePadding="10dp"
+            android:visibility="invisible"
+            android:drawableStart="@drawable/edit1"
+            android:text="SUBMIT" />
+
+
+
+    </LinearLayout>
+</RelativeLayout>
